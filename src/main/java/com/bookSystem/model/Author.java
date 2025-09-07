@@ -1,7 +1,7 @@
 package com.bookSystem.model;
 public class Author{
-    private String name;
-    private String nationality;
+    private final String name;
+    private final String nationality;
     public String getName() {
         return name;
     }

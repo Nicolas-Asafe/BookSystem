@@ -1,9 +1,9 @@
 package com.bookSystem.model;
 public class Book {
-    private String title;
-    private Author author;
-    private double price;
-    private int year;
+    private final String title;
+    private final Author author;
+    private final double price;
+    private final int year;
     public Book(String title, Author author, double price, int year) {
         this.title = title;
         this.author = author;
