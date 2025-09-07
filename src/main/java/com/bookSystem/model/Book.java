@@ -1,5 +1,5 @@
 package com.bookSystem.model;
-class Book {
+public class Book {
     private String title;
     private Author author;
     private double price;

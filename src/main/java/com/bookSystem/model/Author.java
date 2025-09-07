@@ -1,5 +1,5 @@
 package com.bookSystem.model;
-class Author{
+public class Author{
     String name;
     String nationality;
 }
