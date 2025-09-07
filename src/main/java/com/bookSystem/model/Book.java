@@ -11,18 +11,18 @@ public class Book {
         this.year = year;
     }
     public double getPrice() {
-        return this.price;
+        return price;
     }
     public Author getAuthor() {
-        return this.author;
+        return author;
     }
     public String getTitle() {
-        return this.title;
+        return title;
     }
     public int getYear() {
-        return this.year;
+        return year;
     }
     public String getInfo() {
-        return "Title: "+this.title+"; Author: "+this.author+"; Price: "+this.price+"; Year: "+this.year;
+        return "Title: "+title+"; Author: "+author+"; Price: "+this.price+"; Year: "+year;
     }
 }
