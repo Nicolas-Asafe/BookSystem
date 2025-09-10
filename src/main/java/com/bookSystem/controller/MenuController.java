@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.util.function.Supplier;
 
 public class MenuController {
-    private BookService bs = new BookService();
+    private final BookService bs = new BookService();
     private void CreateLayout(ArrayList<String> options, Supplier<String> typeNext) {
         System.out.println("========================");
         for (int i = 0; i < options.size(); i++) {
@@ -44,13 +44,11 @@ public class MenuController {
     }
     public void SelectOptionsMenuInitial(int opNum){
         switch (opNum) {
-            case 1:
-                CreateBookOptionUI();
-                break;
-            default:
-                throw new AssertionError();
+            case 1 -> CreateBookOptionUI();
+            default -> throw new AssertionError();
         }
     }
+    @SuppressWarnings("ConvertToTryWithResources")
     public void CreateBookOptionUI(){
         Scanner sc = new Scanner(System.in);
 
